@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Streak Counter</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <!-- upper section -->
+      <section class="welcome-section">
+        <!-- Icon section -->
+        <div class="icon-area">
+          <ion-icon class="add-btn" name="add-circle-outline"></ion-icon>
+          <ion-icon class="close-btn" name="close-circle-outline"></ion-icon>
+        </div>
+        <!-- Main section -->
+        <!-- Section with phone -->
+        <div class="main-area">
+          <img src="./images/watch.png" alt="Watch" />
+          <h3>Welcome to My Streak Counter</h3>
+        </div>
+
+        <!-- Form -->
+        <div class="form-section">
+          <!-- Icons section -->
+          <div class="icons-area">
+            <!-- Menus -->
+            <div class="icons">
+              <!-- Vertical dots icon -->
+              <ion-icon name="ellipsis-vertical"></ion-icon>
+              <!-- Hamberger menu-->
+              <ion-icon name="menu-outline"></ion-icon>
+            </div>
+            <p>Add a Todo here</p>
+          </div>
+          <!-- Form section -->
+          <div class="form-container">
+            <form action="#">
+              <p class="error-message">Please fill in all Fields</p>
+              <div class="header">Please Add A task</div>
+              <!-- Task name -->
+              <div class="task-input">
+                <label for="">Task Name</label>
+                <input
+                  id="task-name"
+                  type="text"
+                  value="Smoking"
+                  placeholder="Enter a task name ..."
+                />
+              </div>
+              <!-- Image here -->
+              <div class="task-input">
+                <label for="">Image</label>
+                <input
+                  id="task-image"
+                  type="text"
+                  value="data:image/jpeg;base64,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"
+                  placeholder="Enter an image url or an icon url ..."
+                />
+              </div>
+              <!-- Date here -->
+              <div class="task-input">
+                <label for="">Start Date</label>
+                <input id="task-date" type="date" value="2022-08-01" />
+              </div>
+              <!-- Add todo -->
+              <input id="submit-btn" type="submit" value="Add Task" />
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <!-- Notification/Activity status section -->
+      <!-- <section class="activity-status">You Don't Have Any Activities!!</section> -->
+      <section class="activity-status">Activities</section>
+
+      <!-- Activity list section -->
+      <section class="activity-section">
+        <!-- First activity -->
+        <div class="activity">
+          <div class="image-wrapper">
+            <!-- <ion-icon name="logo-no-smoking"></ion-icon> -->
+            <img
+              src="https://winehousenigeria.com/wp-content/uploads/2019/01/Luc-Belaire-Luxe-Carton.png"
+              alt=""
+            />
+          </div>
+          <p class="date">2022-07-31</p>
+          <p class="activity-name">Taking Alcohol</p>
+        </div>
+      </section>
+    </main>
+
+    <!-- Modal section -->
+    <section class="modal"></section>
+
+    <!-- Scripts -->
+    <!-- functionality script -->
+    <script type="module" src="./dist/index.js"></script>
+    <!-- Icons script -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

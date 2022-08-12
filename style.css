@@ -1,0 +1,299 @@
+:root {
+  --dark-orange: #ef6d4e;
+  --light-orange: rgb(240, 177, 155);
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #fff;
+}
+/* .show {
+  display: flex;
+}
+.hide {
+  display: none;
+} */
+/* main {
+  width: 99%;
+  margin: 0 auto;
+} */
+.welcome-section {
+  display: flex;
+  width: 100%;
+  height: 60vh;
+  background-color: var(--dark-orange);
+}
+.welcome-section .icon-area {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: aqua; */
+}
+.welcome-section .icon-area ion-icon {
+  font-size: 72px;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.welcome-section .icon-area ion-icon:hover {
+  transform: scale(1.1);
+}
+.welcome-section .icon-area .add-btn {
+  display: block;
+}
+.welcome-section .icon-area .close-btn {
+  display: none;
+}
+
+/* Section with the phone image */
+.welcome-section .main-area {
+  display: flex;
+  width: 80%;
+  height: 100%;
+  align-items: center;
+  /* background-color: rgb(183, 123, 240); */
+  color: #fff;
+}
+.welcome-section .main-area img {
+  height: 98%;
+  margin: 0 4rem;
+  width: auto;
+}
+.welcome-section .main-area h3 {
+  font-size: 2rem;
+}
+
+/* Section with the form */
+.welcome-section .form-section {
+  display: none;
+  width: 80%;
+}
+.welcome-section .form-section .icons-area {
+  /* background-color: rgb(211, 44, 197); */
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.welcome-section .form-section .icons-area .icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4rem;
+}
+.welcome-section .form-section .icons-area .icons ion-icon {
+  font-size: 48px;
+  color: #fff;
+}
+.welcome-section .form-section .icons-area .icons ion-icon:last-child {
+  font-size: 88px;
+  margin-left: -1.6rem;
+}
+.welcome-section .form-section .icons-area p {
+  font-size: 1rem;
+  color: #fff;
+}
+/* The form */
+.welcome-section .form-section .form-container {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0.4rem;
+}
+.welcome-section .form-section .form-container form {
+  background-color: #fff;
+  width: 70%;
+  height: 103%;
+  padding: 0 0.6rem;
+  margin: 0 auto;
+}
+.welcome-section .form-section .form-container form .error-message {
+  width: 100%;
+  display: none;
+  margin: 0.5rem 0;
+  color: red;
+}
+.welcome-section .form-section .form-container form .header {
+  height: 2rem;
+  width: 100%;
+  margin: 0.3rem 0 1rem;
+  display: flex;
+  align-items: center;
+  border-radius: 2px;
+  padding-left: 0.7rem;
+  color: #fff;
+  background-color: var(--dark-orange);
+}
+.welcome-section .form-section .form-container form .task-input {
+  display: flex;
+  /* background-color: aquamarine; */
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+.welcome-section .form-section .form-container form .task-input label {
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+  color: var(--dark-orange);
+}
+.welcome-section .form-section .form-container form .task-input input {
+  height: 2rem;
+  border: 2px solid rgb(182, 181, 181);
+  border-radius: 3px;
+}
+.welcome-section
+  .form-section
+  .form-container
+  form
+  .task-input
+  input[type="date"] {
+  padding-left: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+.welcome-section .form-section .form-container form input[type="submit"] {
+  width: 100%;
+  display: flex;
+  height: 3rem;
+  color: #fff;
+  font-size: 1.1rem;
+  background-color: var(--dark-orange);
+  cursor: pointer;
+  border: 2px solid black;
+  border-radius: 3px;
+  justify-content: center;
+  align-items: center;
+}
+/* Activity status */
+.activity-status {
+  display: flex;
+  width: 100%;
+  height: 3rem;
+  margin-top: 0.5rem;
+  align-items: center;
+  justify-content: center;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 1.3rem;
+  /* background-color: aquamarine; */
+}
+
+/* Activity section */
+.activity-section {
+  display: flex;
+  flex-wrap: wrap;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.7rem;
+  /* background-color: aquamarine; */
+  padding: 0 5rem;
+}
+.activity-section .activity {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 14rem;
+  width: 15rem;
+  border: 2px solid var(--light-orange);
+  /* border-radius: 6px; */
+  margin: 0 1rem 2rem 0;
+}
+.activity-section .activity .image-wrapper {
+  width: 100%;
+  height: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: aqua; */
+}
+/* Activity image */
+.activity-section .activity .image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* Icons */
+/* .activity-section .activity .image-wrapper ion-icon {
+  font-size: 72px;
+  color: rgb(55, 151, 230);
+} */
+.activity-section .activity .date {
+  margin: 0.7rem 0;
+}
+
+/* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.modal .activities-container {
+  background-color: #fff;
+  width: 40%;
+  height: auto;
+  margin: 0 auto;
+}
+.modal .activities-container .activity {
+  /* height: 60%; */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.modal .activities-container .activity .modal-image {
+  height: 20rem;
+  width: 100%;
+}
+.modal .activities-container .activity .modal-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.modal .activities-container .activity ion-icon {
+  font-size: 96px;
+  margin-top: 2rem;
+  color: rgb(55, 151, 230);
+}
+.modal .activities-container .activity .date {
+  margin: 1rem 0;
+}
+.modal .activities-container .activity .time-passed {
+  margin: 1rem 0;
+}
+.modal .activities-container .close-delete-btn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+  /* background-color: aquamarine; */
+}
+.modal .activities-container .close-delete-btn .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  color: #fff;
+  font-size: 1.2rem;
+  background-color: rgb(142, 19, 146);
+}
+.modal .activities-container .close-delete-btn .close-modal {
+  margin-right: 1rem;
+  background-color: red;
+}
+.modal .activities-container .close-delete-btn .delete-modal {
+  background-color: rgb(104, 101, 101);
+}
